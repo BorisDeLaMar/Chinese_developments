@@ -3,34 +3,1121 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: BEBR1S Andonoff, ITMO, LIC=----
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ilya shumeyko.ilya@gmail.com, FR, LIC=----
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.38.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\bin\
-C Compiler:      ArmClang.exe V6.19
-Assembler:       Armasm.exe V6.19
-Linker/Locator:  ArmLink.exe V6.19
-Library Manager: ArmAr.exe V6.19
-Hex Converter:   FromElf.exe V6.19
-CPU DLL:         SARMCM3.DLL V5.38.0.0
-Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      UL2CM3.DLL V1.164.8.0
-Dialog DLL:      TCM.DLL V1.56.4.0
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\FR\CHINA\IR-module\IR_MCU_SDK_DEMO_V1.3_basedon_2.0module_20201215\MDK-ARM\NK1092C_H750.uvprojx
-Project File Date:  07/19/2024
+C:\FR\CHINA\IR-module\Patched\MDK-ARM\NK1092C_H750.uvprojx
+Project File Date:  07/23/2024
 
 <h2>Output:</h2>
-*** Target 'NK1092C_H750' uses ARM-Compiler 'Default Compiler Version 5' which is not available.
-*** Please review the installed ARM Compiler Versions:
-   'Manage Project Items - Folders/Extensions' to manage ARM Compiler Versions.
-   'Options for Target - Target' to select an ARM Compiler Version for the target.
-*** Build aborted.
-Build Time Elapsed:  00:00:00
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'NK1092C_H750'
+assembling startup_stm32h750xx.s...
+../Src/task/task_ircamera.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/task/task_ircamera.c(2): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(57): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(68): warning: 'portARMV8M_MINOR_VERSION' is not defined, evaluates to 0 [-Wundef]
+#if ( portARMV8M_MINOR_VERSION >= 1 )
+      ^
+../Src/task/task_ircamera.c(3): warning: In file included from...
+../Inc\usb_device.h(33): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Src/task/task_ircamera.c(10): warning: In file included from...
+../Src/Gd/inc\Varible.h(6): warning: In file included from...
+../Src/Measure\MeasureInterface.h(27): warning: padding struct 'struct MEASURE_Fitler_PARAM' with 2 bytes to align 'fCompensateA1' [-Wpadded]
+        float fCompensateA1;  //user should avoid  to update
+              ^
+../Src/Measure\MeasureInterface.h(7): warning: padding size of 'struct MEASURE_Fitler_PARAM' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct MEASURE_Fitler_PARAM 
+               ^
+../Src/Measure\MeasureInterface.h(91): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+../Src/task/task_ircamera.c(43): warning: no previous extern declaration for non-static variable 'g_nuc_start' [-Wmissing-variable-declarations]
+uint8_t g_nuc_start = 0;
+        ^
+../Src/task/task_ircamera.c(43): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t g_nuc_start = 0;
+^
+../Src/task/task_ircamera.c(44): warning: no previous extern declaration for non-static variable 'g_colorbar_index' [-Wmissing-variable-declarations]
+uint8_t g_colorbar_index = 1;
+        ^
+../Src/task/task_ircamera.c(44): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t g_colorbar_index = 1;
+^
+../Src/task/task_ircamera.c(66): warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+                int ii = strlen(cmd) + 1;
+                    ~~   ~~~~~~~~~~~~^~~
+../Src/task/task_ircamera.c(67): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                memcpy( value, (pbuf + ii), (len - ii) );
+                ~~~~~~                       ~~~~^~~~
+../Src/task/task_ircamera.c(98): warning: cast from 'char *' to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                        uint16_t *pvalue = (uint16_t *)(&value[0]);
+                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/task/task_ircamera.c(116): warning: cast from 'char *' to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                        uint16_t *pvalue = (uint16_t *)(&value[0]);
+                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/task/task_ircamera.c(119): warning: declaration shadows a local variable [-Wshadow]
+                        uint16_t value = *(pvalue+1);
+                                 ^
+../Src/task/task_ircamera.c(63): note: previous declaration is here
+                char value[32];
+                     ^
+../Src/task/task_ircamera.c(125): warning: cast from 'char *' to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                        uint16_t *pvalue = (uint16_t *)(&value[0]);
+                                           ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/task/task_ircamera.c(53): warning: no previous prototype for function 'usb_SDK_read_cb' [-Wmissing-prototypes]
+void usb_SDK_read_cb(uint8_t *pbuf, uint16_t len)
+     ^
+../Src/task/task_ircamera.c(53): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void usb_SDK_read_cb(uint8_t *pbuf, uint16_t len)
+^
+static 
+../Src/task/task_ircamera.c(150): warning: no previous extern declaration for non-static variable 'MeasurePeriod' [-Wmissing-variable-declarations]
+uint16_t MeasurePeriod=0;
+         ^
+../Src/task/task_ircamera.c(150): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t MeasurePeriod=0;
+^
+../Src/task/task_ircamera.c(198): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                                shutter_id=Shutter_State((uint16_t*)pBuff_x16,shutter_id,SPI_Reg_Data120,&Loop_Data120);
+                                                         ^~~~~~~~~~~~~~~~~~~~
+../Src/task/task_ircamera.c(218): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'unsigned short *' increases required alignment from 1 to 2 [-Wcast-align]
+                                pImage=NUCbyTwoPoint((unsigned short*)pBuff_x16);
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/task/task_ircamera.c(10): warning: In file included from...
+../Src/Gd/inc\Varible.h(5): warning: In file included from...
+../Src/Gd/inc\Sensor.h(23): warning: padding size of 'Loop_Data' with 1 byte to alignment boundary [-Wpadded]
+typedef struct  
+        ^
+../Src/task/task_ircamera.c(225): warning: implicit conversion changes signedness: 'unsigned short' to 'short' [-Wsign-conversion]
+                                        GetTempInfo( 0,0,120,90,( short* )pImage,Loop_Data120.us_avg_shutter,&IRInfo120 ,&measureParam120 );
+                                        ~~~~~~~~~~~                              ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+../Src/task/task_ircamera.c(286): warning: unused variable 'ret' [-Wunused-variable]
+                                int ret = usb_SDK_write((uint8_t *)(upload_buff), g_upload_length);
+                                    ^
+../Src/task/task_ircamera.c(321): warning: implicit conversion loses integer precision: 'unsigned short' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        pTempInfo->CenterPointX=IRInfo120.PostXCursor;
+                                                               ~~~~~~~~~~~^~~~~~~~~~~
+../Src/task/task_ircamera.c(322): warning: implicit conversion loses integer precision: 'unsigned short' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        pTempInfo->CenterPointY=IRInfo120.PostYCursor;
+                                                               ~~~~~~~~~~~^~~~~~~~~~~
+../Src/task/task_ircamera.c(323): warning: implicit conversion turns floating-point number into integer: 'float' to 'int16_t' (aka 'short') [-Wfloat-conversion]
+                                        pTempInfo->CenterPointtTem=IRInfo120.CursorValue*100;
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~^~~~
+../Src/task/task_ircamera.c(325): warning: implicit conversion loses integer precision: 'unsigned short' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        pTempInfo->MaxPointX=IRInfo120.PostXMax;
+                                                            ~~~~~~~~~~~^~~~~~~~
+../Src/task/task_ircamera.c(326): warning: implicit conversion loses integer precision: 'unsigned short' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        pTempInfo->MaxPointY=IRInfo120.PostYMax;
+                                                            ~~~~~~~~~~~^~~~~~~~
+../Src/task/task_ircamera.c(327): warning: implicit conversion turns floating-point number into integer: 'float' to 'int16_t' (aka 'short') [-Wfloat-conversion]
+                                        pTempInfo->MaxPointtTem=IRInfo120.MaxValue*100;
+                                                               ~~~~~~~~~~~~~~~~~~~^~~~
+../Src/task/task_ircamera.c(329): warning: implicit conversion loses integer precision: 'unsigned short' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        pTempInfo->MinPointX=IRInfo120.PostXMin;
+                                                            ~~~~~~~~~~~^~~~~~~~
+../Src/task/task_ircamera.c(330): warning: implicit conversion loses integer precision: 'unsigned short' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                        pTempInfo->MinPointY=IRInfo120.PostYMin;
+                                                            ~~~~~~~~~~~^~~~~~~~
+../Src/task/task_ircamera.c(331): warning: implicit conversion turns floating-point number into integer: 'float' to 'int16_t' (aka 'short') [-Wfloat-conversion]
+                                        pTempInfo->MinPointTem=IRInfo120.MinValue*100;
+                                                              ~~~~~~~~~~~~~~~~~~~^~~~
+../Src/task/task_ircamera.c(152): warning: unused parameter 'argument' [-Wunused-parameter]
+void StartIRCameraTask(void const * argument)
+                                    ^
+../Src/task/task_ircamera.c(152): warning: no previous prototype for function 'StartIRCameraTask' [-Wmissing-prototypes]
+void StartIRCameraTask(void const * argument)
+     ^
+../Src/task/task_ircamera.c(152): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void StartIRCameraTask(void const * argument)
+^
+static 
+../Src/task/task_ircamera.c(153): warning: function 'StartIRCameraTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/task/task_ircamera.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(267): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dcmi.h(137): warning: padding struct 'DCMI_HandleTypeDef' with 2 bytes to align 'XferCount' [-Wpadded]
+  __IO uint32_t                 XferCount;           /*!< DMA transfer counter         */
+                                ^
+../Src/task/task_ircamera.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+../Src/task/task_ircamera.c(347): warning: no previous prototype for function 'DMA_Copy' [-Wmissing-prototypes]
+void DMA_Copy(uint32_t DstAddress, uint32_t SrcAddress, uint32_t DataLength)
+     ^
+../Src/task/task_ircamera.c(347): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA_Copy(uint32_t DstAddress, uint32_t SrcAddress, uint32_t DataLength)
+^
+static 
+../Src/task/task_ircamera.c(377): warning: declaration shadows a variable in the global scope [-Wshadow]
+void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef *hdcmi)
+                                                     ^
+../Src/task/task_ircamera.c(14): note: previous declaration is here
+extern DCMI_HandleTypeDef hdcmi;
+                          ^
+../Src/task/task_ircamera.c(377): warning: unused parameter 'hdcmi' [-Wunused-parameter]
+void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef *hdcmi)
+                                                     ^
+../Src/task/task_ircamera.c(391): warning: unused parameter 'hdma' [-Wunused-parameter]
+void DMA_DMAXferCplt(DMA_HandleTypeDef *hdma)
+                                        ^
+../Src/task/task_ircamera.c(391): warning: no previous prototype for function 'DMA_DMAXferCplt' [-Wmissing-prototypes]
+void DMA_DMAXferCplt(DMA_HandleTypeDef *hdma)
+     ^
+../Src/task/task_ircamera.c(391): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA_DMAXferCplt(DMA_HandleTypeDef *hdma)
+^
+static 
+../Src/task/task_ircamera.c(24): warning: no previous extern declaration for non-static variable 'new_param' [-Wmissing-variable-declarations]
+uint8_t new_param[PARAM_MAX_LEN];
+        ^
+../Src/task/task_ircamera.c(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t new_param[PARAM_MAX_LEN];
+^
+42 warnings generated.
+compiling task_ircamera.c...
+../Src/stm32h7xx_it.c(22): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/stm32h7xx_it.c(88): warning: function 'HardFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/stm32h7xx_it.c(103): warning: function 'MemManage_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/stm32h7xx_it.c(118): warning: function 'BusFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/stm32h7xx_it.c(133): warning: function 'UsageFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/stm32h7xx_it.c(22): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+../Src/stm32h7xx_it.c(22): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(459): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_tim.h(363): warning: padding struct 'TIM_HandleTypeDef' with 3 bytes to align 'hdma' [-Wpadded]
+  DMA_HandleTypeDef                  *hdma[7];          /*!< DMA Handlers array
+                                      ^
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_tim.h(357): warning: padding size of 'TIM_HandleTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+../Src/stm32h7xx_it.c(22): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(267): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dcmi.h(137): warning: padding struct 'DCMI_HandleTypeDef' with 2 bytes to align 'XferCount' [-Wpadded]
+  __IO uint32_t                 XferCount;           /*!< DMA transfer counter         */
+                                ^
+../Src/stm32h7xx_it.c(22): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(101): warning: padding struct 'PCD_HandleTypeDef' with 3 bytes to align 'IN_ep' [-Wpadded]
+  PCD_EPTypeDef           IN_ep[16];   /*!< IN endpoint parameters            */
+                          ^
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(105): warning: padding struct 'PCD_HandleTypeDef' with 2 bytes to align 'ErrorCode' [-Wpadded]
+  __IO  uint32_t          ErrorCode;   /*!< PCD Error code                    */
+                          ^
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(108): warning: padding struct 'PCD_HandleTypeDef' with 3 bytes to align 'BESL' [-Wpadded]
+  uint32_t                BESL;
+                          ^
+13 warnings generated.
+compiling stm32h7xx_it.c...
+../Src/ir/ir_sensor.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/ir/ir_sensor.c(2): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(57): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(68): warning: 'portARMV8M_MINOR_VERSION' is not defined, evaluates to 0 [-Wundef]
+#if ( portARMV8M_MINOR_VERSION >= 1 )
+      ^
+../Src/ir/ir_sensor.c(3): warning: In file included from...
+../Inc\usb_device.h(33): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Src/ir/ir_sensor.c(41): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                sensor_reg_write(offset, value);
+                ~~~~~~~~~~~~~~~~         ^~~~~
+../Src/ir/ir_sensor.c(41): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                sensor_reg_write(offset, value);
+                ~~~~~~~~~~~~~~~~ ^~~~~~
+../Src/ir/ir_sensor.c(46): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                INT_time_set(value);
+                ~~~~~~~~~~~~ ^~~~~
+../Src/ir/ir_sensor.c(36): warning: variable 'p_temp' is uninitialized when used here [-Wuninitialized]
+        *(p_temp + offset) = value;
+          ^~~~~~
+../Src/ir/ir_sensor.c(34): note: initialize the variable 'p_temp' to silence this warning
+        uint16_t *p_temp;
+                        ^
+                         = NULL
+../Src/ir/ir_sensor.c(63): warning: no previous extern declaration for non-static variable 'g_param_init_done' [-Wmissing-variable-declarations]
+uint16_t g_param_init_done = 0;
+         ^
+../Src/ir/ir_sensor.c(63): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t g_param_init_done = 0;
+^
+../Src/ir/ir_sensor.c(64): warning: no previous extern declaration for non-static variable 'g_start_tmp_read_done' [-Wmissing-variable-declarations]
+uint16_t g_start_tmp_read_done = 0;
+         ^
+../Src/ir/ir_sensor.c(64): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t g_start_tmp_read_done = 0;
+^
+../Src/ir/ir_sensor.c(72): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'PARAM_STATUS *' increases required alignment from 1 to 2 [-Wcast-align]
+        pParamStatus = (PARAM_STATUS *)(buffer + PARAM_STATUS_OFFSET);
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/ir/ir_sensor.c(73): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'PARAM_STATUS *' increases required alignment from 1 to 2 [-Wcast-align]
+        pParamStatus1 = (PARAM_STATUS *)(buffer + ONE_PACKAGE_SIZE + PARAM_STATUS_OFFSET);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/ir/ir_sensor.c(75): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+        pParamUser = (uint16_t *)(buffer + PARAM_USER_OFFSET);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/ir/ir_sensor.c(76): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+        pParamUser1 = (uint16_t *)(buffer + ONE_PACKAGE_SIZE + PARAM_USER_OFFSET);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/ir/ir_sensor.c(66): warning: no previous extern declaration for non-static variable 'SDK_USBD_SERIALNUMBER_STRING' [-Wmissing-variable-declarations]
+char SDK_USBD_SERIALNUMBER_STRING[15];
+     ^
+../Src/ir/ir_sensor.c(66): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char SDK_USBD_SERIALNUMBER_STRING[15];
+^
+15 warnings generated.
+compiling ir_sensor.c...
+../Src/freertos.c(23): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(68): warning: 'portARMV8M_MINOR_VERSION' is not defined, evaluates to 0 [-Wundef]
+#if ( portARMV8M_MINOR_VERSION >= 1 )
+      ^
+../Src/freertos.c(24): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/freertos.c(22): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(3146): warning: padding size of 'struct xSTATIC_TCB' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TCB
+               ^
+4 warnings generated.
+compiling freertos.c...
+../Src/task/task_default.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/task/task_default.c(2): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(57): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(68): warning: 'portARMV8M_MINOR_VERSION' is not defined, evaluates to 0 [-Wundef]
+#if ( portARMV8M_MINOR_VERSION >= 1 )
+      ^
+../Src/task/task_default.c(6): warning: In file included from...
+../Src/Gd/inc\Varible.h(6): warning: In file included from...
+../Src/Measure\MeasureInterface.h(27): warning: padding struct 'struct MEASURE_Fitler_PARAM' with 2 bytes to align 'fCompensateA1' [-Wpadded]
+        float fCompensateA1;  //user should avoid  to update
+              ^
+../Src/Measure\MeasureInterface.h(7): warning: padding size of 'struct MEASURE_Fitler_PARAM' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct MEASURE_Fitler_PARAM 
+               ^
+../Src/Measure\MeasureInterface.h(91): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+../Src/task/task_default.c(32): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        ads1115_convert(g_ad_channel);
+        ~~~~~~~~~~~~~~~ ^~~~~~~~~~~~
+../Src/task/task_default.c(44): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                        ads1115_convert(g_ad_channel);
+                        ~~~~~~~~~~~~~~~ ^~~~~~~~~~~~
+../Src/task/task_default.c(20): warning: unused parameter 'argument' [-Wunused-parameter]
+void StartDefaultTask(void const * argument)
+                                   ^
+../Src/task/task_default.c(20): warning: no previous prototype for function 'StartDefaultTask' [-Wmissing-prototypes]
+void StartDefaultTask(void const * argument)
+     ^
+../Src/task/task_default.c(20): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void StartDefaultTask(void const * argument)
+^
+static 
+../Src/task/task_default.c(21): warning: function 'StartDefaultTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/task/task_default.c(86): warning: implicit conversion turns floating-point number into integer: 'double' to 'short' [-Wfloat-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+../Src/task/task_default.c(86): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                                                                                                ~^~
+../Src/task/task_default.c(86): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                                                                             ~^~
+../Src/task/task_default.c(86): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                                                                          ~^~
+../Src/task/task_default.c(86): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                                                                       ~^~
+../Src/task/task_default.c(86): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                                                             ~^~
+../Src/task/task_default.c(86): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000;
+                                                                          ~^~
+../Src/task/task_default.c(95): warning: implicit conversion turns floating-point number into integer: 'double' to 'short' [-Wfloat-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+../Src/task/task_default.c(95): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                                                                                                ~^~
+../Src/task/task_default.c(95): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                                                                             ~^~
+../Src/task/task_default.c(95): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                                                                          ~^~
+../Src/task/task_default.c(95): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                                                                       ~^~
+../Src/task/task_default.c(95): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                                                             ~^~
+../Src/task/task_default.c(95): warning: implicit conversion from 'uint64_t' (aka 'unsigned long long') to 'double' may lose precision [-Wimplicit-int-float-conversion]
+                                temp_value = (12736130490197.3+121840.2729*ad*ad-4.0235*ad*ad*ad-1821807621.6914*ad)/1000000000; 
+                                                                          ~^~
+../Src/task/task_default.c(114): warning: implicit conversion turns floating-point number into integer: 'double' to 'short' [-Wfloat-conversion]
+                                temp_value = 37129-2.01*ad_vaule;
+                                           ~ ~~~~~^~~~~~~~~~~~~~
+26 warnings generated.
+compiling task_default.c...
+../Src/flash/W25QXX.c(2): warning: In file included from...
+../Src/flash/W25QXX.h(23): warning: In file included from...
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include\stm32h7xx.h(282): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/flash/W25QXX.c(82): warning: no previous prototype for function 'BSP_W25Qx_Erase_Sector' [-Wmissing-prototypes]
+uint8_t BSP_W25Qx_Erase_Sector(uint32_t sector_num)
+        ^
+../Src/flash/W25QXX.c(82): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t BSP_W25Qx_Erase_Sector(uint32_t sector_num)
+^
+static 
+../Src/flash/W25QXX.c(2): warning: In file included from...
+../Src/flash/W25QXX.h(23): warning: In file included from...
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include\stm32h7xx.h(282): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(447): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_spi.h(201): warning: padding struct 'struct __SPI_HandleTypeDef' with 2 bytes to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;                    /*!< SPI Error code                           */
+                             ^
+../Src/flash/W25QXX.c(2): warning: In file included from...
+../Src/flash/W25QXX.h(23): warning: In file included from...
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include\stm32h7xx.h(282): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+../Src/flash/W25QXX.c(179): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                if (HAL_SPI_TransmitReceive(&hspi4, Flash_buff, Flash_buff, (left+4), W25Qx_TIMEOUT_VALUE) != HAL_OK)
+                    ~~~~~~~~~~~~~~~~~~~~~~~                                  ~~~~^~
+../Src/flash/W25QXX.c(254): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+    if (HAL_SPI_Transmit(&hspi4, Flash_buff, (left+4), W25Qx_TIMEOUT_VALUE) != HAL_OK)
+        ~~~~~~~~~~~~~~~~                      ~~~~^~
+../Src/flash/W25QXX.c(329): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+                if (HAL_SPI_TransmitReceive(&hspi4, Flash_buff, Flash_buff, (left+4), W25Qx_TIMEOUT_VALUE) != HAL_OK)
+                    ~~~~~~~~~~~~~~~~~~~~~~~                                  ~~~~^~
+../Src/flash/W25QXX.c(282): warning: no previous prototype for function 'BSP_W25Qx_Read_Sector1' [-Wmissing-prototypes]
+uint8_t BSP_W25Qx_Read_Sector1(uint32_t sector_num, uint8_t* pData, uint32_t Size)
+        ^
+../Src/flash/W25QXX.c(282): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t BSP_W25Qx_Read_Sector1(uint32_t sector_num, uint8_t* pData, uint32_t Size)
+^
+static 
+9 warnings generated.
+compiling W25QXX.c...
+../Src/spi/spi_device.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/spi/spi_device.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(447): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_spi.h(201): warning: padding struct 'struct __SPI_HandleTypeDef' with 2 bytes to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;                    /*!< SPI Error code                           */
+                             ^
+../Src/spi/spi_device.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+../Src/spi/spi_device.c(54): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        INT_time_set(p_config->INT_value);
+        ~~~~~~~~~~~~ ~~~~~~~~~~^~~~~~~~~
+../Src/spi/spi_device.c(67): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                ret = sensor_reg_write((i+0x10), (p_config->detect_table[i]&0xff));
+                      ~~~~~~~~~~~~~~~~  ~^~~~~
+../Src/spi/spi_device.c(74): warning: variable 'ret' may be uninitialized when used here [-Wconditional-uninitialized]
+        return ret;
+               ^~~
+../Src/spi/spi_device.c(52): note: initialize the variable 'ret' to silence this warning
+        int ret;
+               ^
+                = 0
+../Src/spi/spi_device.c(84): warning: comparison of integers of different signs: 'int' and 'unsigned int' [-Wsign-compare]
+        for ( i=0; i<sizeof(reg_addr_table); i++ )
+                   ~^~~~~~~~~~~~~~~~~~~~~~~
+../Src/spi/spi_device.c(89): warning: variable 'ret' may be uninitialized when used here [-Wconditional-uninitialized]
+        return ret;
+               ^~~
+../Src/spi/spi_device.c(79): note: initialize the variable 'ret' to silence this warning
+        int ret;
+               ^
+                = 0
+9 warnings generated.
+compiling spi_device.c...
+../Src/usb_device.c(24): warning: In file included from...
+../Inc\usb_device.h(31): warning: In file included from...
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include\stm32h7xx.h(282): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/usb_device.c(24): warning: In file included from...
+../Inc\usb_device.h(33): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(363): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'dev_config' [-Wpadded]
+  uint32_t                dev_config;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(367): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'ep_in' [-Wpadded]
+  USBD_EndpointTypeDef    ep_in[16];
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(376): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'dev_remote_wakeup' [-Wpadded]
+  uint32_t                dev_remote_wakeup;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(379): warning: padding struct 'struct _USBD_HandleTypeDef' with 1 byte to align 'request' [-Wpadded]
+  USBD_SetupReqTypedef    request;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(380): warning: padding struct 'struct _USBD_HandleTypeDef' with 2 bytes to align 'pDesc' [-Wpadded]
+  USBD_DescriptorsTypeDef *pDesc;
+                           ^
+../Src/usb_device.c(44): warning: no previous extern declaration for non-static variable 'hUsbDeviceFS' [-Wmissing-variable-declarations]
+USBD_HandleTypeDef hUsbDeviceFS;
+                   ^
+../Src/usb_device.c(44): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+USBD_HandleTypeDef hUsbDeviceFS;
+^
+9 warnings generated.
+compiling usb_device.c...
+compiling stm32h7xx_hal_pcd_ex.c...
+../Src/i2c/i2c_device.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/i2c/i2c_device.c(32): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        ret = HAL_I2C_Master_Receive(&hi2c2, chip, buf, len, I2C_TIMEOUT);
+              ~~~~~~~~~~~~~~~~~~~~~~                    ^~~
+../Src/i2c/i2c_device.c(53): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    memcpy(xx + 1, buf, len);
+    ~~~~~~              ^~~
+../Src/i2c/i2c_device.c(56): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        ret = HAL_I2C_Master_Transmit(&hi2c2, chip, xx, 1 + len, I2C_TIMEOUT);
+              ~~~~~~~~~~~~~~~~~~~~~~~                   ~~^~~~~
+../Src/i2c/i2c_device.c(66): warning: no previous prototype for function 'ads1115_init' [-Wmissing-prototypes]
+int ads1115_init(void)
+    ^
+../Src/i2c/i2c_device.c(66): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int ads1115_init(void)
+^
+static 
+../Src/i2c/i2c_device.c(99): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        value[0] = 0xc3 + (chn << 4);
+                 ~ ~~~~~^~~~~~~~~~~~
+../Src/i2c/i2c_device.c(90): warning: no previous prototype for function 'ads1115_convert' [-Wmissing-prototypes]
+int ads1115_convert(uint8_t chn)
+    ^
+../Src/i2c/i2c_device.c(90): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int ads1115_convert(uint8_t chn)
+^
+static 
+../Src/i2c/i2c_device.c(114): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        *val = (value[0] << 8) | value[1];
+             ~ ~~~~~~~~~~~~~~~~^~~~~~~~~~
+../Src/i2c/i2c_device.c(106): warning: no previous prototype for function 'ads1115_read' [-Wmissing-prototypes]
+int ads1115_read(uint16_t *val)
+    ^
+../Src/i2c/i2c_device.c(106): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int ads1115_read(uint16_t *val)
+^
+static 
+../Src/i2c/i2c_device.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(367): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_i2c.h(216): warning: padding struct 'struct __I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;      /*!< I2C Error code                            */
+                             ^
+../Src/i2c/i2c_device.c(1): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+12 warnings generated.
+compiling i2c_device.c...
+../Src/main.c(21): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/main.c(22): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(57): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(68): warning: 'portARMV8M_MINOR_VERSION' is not defined, evaluates to 0 [-Wundef]
+#if ( portARMV8M_MINOR_VERSION >= 1 )
+      ^
+../Src/main.c(23): warning: In file included from...
+../Inc\usb_device.h(33): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Src/main.c(22): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(284): warning: padding struct 'struct os_thread_def' with 2 bytes to align 'instances' [-Wpadded]
+  uint32_t               instances;    ///< maximum number of instances of that thread function
+                         ^
+../Src/main.c(22): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS\cmsis_os.h(56): warning: In file included from...
+../Middlewares/Third_Party/FreeRTOS/Source/include\FreeRTOS.h(3146): warning: padding size of 'struct xSTATIC_TCB' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TCB
+               ^
+../Src/main.c(21): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(267): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dcmi.h(137): warning: padding struct 'DCMI_HandleTypeDef' with 2 bytes to align 'XferCount' [-Wpadded]
+  __IO uint32_t                 XferCount;           /*!< DMA transfer counter         */
+                                ^
+../Src/main.c(21): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(367): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_i2c.h(216): warning: padding struct 'struct __I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;      /*!< I2C Error code                            */
+                             ^
+../Src/main.c(21): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(447): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_spi.h(201): warning: padding struct 'struct __SPI_HandleTypeDef' with 2 bytes to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;                    /*!< SPI Error code                           */
+                             ^
+../Src/main.c(21): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+../Src/main.c(523): warning: unused parameter 'argument' [-Wunused-parameter]
+__weak void StartDefaultTask(void const * argument)
+                                          ^
+../Src/main.c(524): warning: function 'StartDefaultTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/main.c(543): warning: unused parameter 'argument' [-Wunused-parameter]
+__weak void StartIRCameraTask(void const * argument)
+                                           ^
+../Src/main.c(544): warning: function 'StartIRCameraTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../Src/main.c(21): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(459): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_tim.h(363): warning: padding struct 'TIM_HandleTypeDef' with 3 bytes to align 'hdma' [-Wpadded]
+  DMA_HandleTypeDef                  *hdma[7];          /*!< DMA Handlers array
+                                      ^
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_tim.h(357): warning: padding size of 'TIM_HandleTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+../Src/main.c(47): warning: no previous extern declaration for non-static variable 'hdcmi' [-Wmissing-variable-declarations]
+DCMI_HandleTypeDef hdcmi;
+                   ^
+../Src/main.c(47): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+DCMI_HandleTypeDef hdcmi;
+^
+../Src/main.c(48): warning: no previous extern declaration for non-static variable 'hdma_dcmi' [-Wmissing-variable-declarations]
+DMA_HandleTypeDef hdma_dcmi;
+                  ^
+../Src/main.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+DMA_HandleTypeDef hdma_dcmi;
+^
+../Src/main.c(50): warning: no previous extern declaration for non-static variable 'hi2c2' [-Wmissing-variable-declarations]
+I2C_HandleTypeDef hi2c2;
+                  ^
+../Src/main.c(50): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+I2C_HandleTypeDef hi2c2;
+^
+../Src/main.c(52): warning: no previous extern declaration for non-static variable 'hspi1' [-Wmissing-variable-declarations]
+SPI_HandleTypeDef hspi1;
+                  ^
+../Src/main.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SPI_HandleTypeDef hspi1;
+^
+../Src/main.c(53): warning: no previous extern declaration for non-static variable 'hspi4' [-Wmissing-variable-declarations]
+SPI_HandleTypeDef hspi4;
+                  ^
+../Src/main.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SPI_HandleTypeDef hspi4;
+^
+../Src/main.c(55): warning: no previous extern declaration for non-static variable 'hdma_memtomem_dma1_stream1' [-Wmissing-variable-declarations]
+DMA_HandleTypeDef hdma_memtomem_dma1_stream1;
+                  ^
+../Src/main.c(55): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+DMA_HandleTypeDef hdma_memtomem_dma1_stream1;
+^
+../Src/main.c(56): warning: no previous extern declaration for non-static variable 'defaultTaskHandle' [-Wmissing-variable-declarations]
+osThreadId defaultTaskHandle;
+           ^
+../Src/main.c(56): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+osThreadId defaultTaskHandle;
+^
+../Src/main.c(57): warning: no previous extern declaration for non-static variable 'irCameraTaskHandle' [-Wmissing-variable-declarations]
+osThreadId irCameraTaskHandle;
+           ^
+../Src/main.c(57): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+osThreadId irCameraTaskHandle;
+^
+24 warnings generated.
+compiling main.c...
+../Src/stm32h7xx_hal_msp.c(23): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/stm32h7xx_hal_msp.c(23): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(255): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dma.h(146): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                            *Parent;                                                          /*!< Parent object state                           */
+                                   ^
+../Src/stm32h7xx_hal_msp.c(23): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(267): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_dcmi.h(137): warning: padding struct 'DCMI_HandleTypeDef' with 2 bytes to align 'XferCount' [-Wpadded]
+  __IO uint32_t                 XferCount;           /*!< DMA transfer counter         */
+                                ^
+../Src/stm32h7xx_hal_msp.c(23): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(367): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_i2c.h(216): warning: padding struct 'struct __I2C_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;      /*!< I2C Error code                            */
+                             ^
+../Src/stm32h7xx_hal_msp.c(23): warning: In file included from...
+../Inc\main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(447): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_spi.h(201): warning: padding struct 'struct __SPI_HandleTypeDef' with 2 bytes to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t              ErrorCode;                    /*!< SPI Error code                           */
+                             ^
+6 warnings generated.
+compiling stm32h7xx_hal_msp.c...
+../Src/usbd_desc.c(23): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_core.h(28): warning: In file included from...
+../Inc\usbd_conf.h(34): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/usbd_desc.c(23): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_core.h(29): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Src/usbd_desc.c(144): warning: missing field 'GetBOSDescriptor' initializer [-Wmissing-field-initializers]
+};
+^
+../Src/usbd_desc.c(150): warning: no previous extern declaration for non-static variable 'USBD_FS_DeviceDesc' [-Wmissing-variable-declarations]
+__ALIGN_BEGIN uint8_t USBD_FS_DeviceDesc[USB_LEN_DEV_DESC] __ALIGN_END =
+                      ^
+../Src/usbd_desc.c(150): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__ALIGN_BEGIN uint8_t USBD_FS_DeviceDesc[USB_LEN_DEV_DESC] __ALIGN_END =
+              ^
+../Src/usbd_desc.c(178): warning: no previous extern declaration for non-static variable 'USBD_FS_BOSDesc' [-Wmissing-variable-declarations]
+__ALIGN_BEGIN uint8_t USBD_FS_BOSDesc[USB_SIZ_BOS_DESC] __ALIGN_END =
+                      ^
+../Src/usbd_desc.c(178): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__ALIGN_BEGIN uint8_t USBD_FS_BOSDesc[USB_SIZ_BOS_DESC] __ALIGN_END =
+              ^
+../Src/usbd_desc.c(210): warning: no previous extern declaration for non-static variable 'USBD_LangIDDesc' [-Wmissing-variable-declarations]
+__ALIGN_BEGIN uint8_t USBD_LangIDDesc[USB_LEN_LANGID_STR_DESC] __ALIGN_END =
+                      ^
+../Src/usbd_desc.c(210): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__ALIGN_BEGIN uint8_t USBD_LangIDDesc[USB_LEN_LANGID_STR_DESC] __ALIGN_END =
+              ^
+../Src/usbd_desc.c(227): warning: no previous extern declaration for non-static variable 'USBD_StringSerial' [-Wmissing-variable-declarations]
+__ALIGN_BEGIN uint8_t USBD_StringSerial[USB_SIZ_STRING_SERIAL] __ALIGN_END = {
+                      ^
+../Src/usbd_desc.c(227): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__ALIGN_BEGIN uint8_t USBD_StringSerial[USB_SIZ_STRING_SERIAL] __ALIGN_END = {
+              ^
+../Src/usbd_desc.c(222): warning: no previous extern declaration for non-static variable 'USBD_StrDesc' [-Wmissing-variable-declarations]
+__ALIGN_BEGIN uint8_t USBD_StrDesc[USBD_MAX_STR_DESC_SIZ] __ALIGN_END;
+                      ^
+../Src/usbd_desc.c(222): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__ALIGN_BEGIN uint8_t USBD_StrDesc[USBD_MAX_STR_DESC_SIZ] __ALIGN_END;
+              ^
+9 warnings generated.
+compiling usbd_desc.c...
+../Src/usbd_conf.c(23): warning: In file included from...
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include\stm32h7xx.h(282): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/usbd_conf.c(25): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Src/usbd_conf.c(23): warning: In file included from...
+../Drivers/CMSIS/Device/ST/STM32H7xx/Include\stm32h7xx.h(282): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(101): warning: padding struct 'PCD_HandleTypeDef' with 3 bytes to align 'IN_ep' [-Wpadded]
+  PCD_EPTypeDef           IN_ep[16];   /*!< IN endpoint parameters            */
+                          ^
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(105): warning: padding struct 'PCD_HandleTypeDef' with 2 bytes to align 'ErrorCode' [-Wpadded]
+  __IO  uint32_t          ErrorCode;   /*!< PCD Error code                    */
+                          ^
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(108): warning: padding struct 'PCD_HandleTypeDef' with 3 bytes to align 'BESL' [-Wpadded]
+  uint32_t                BESL;
+                          ^
+../Src/usbd_conf.c(25): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(363): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'dev_config' [-Wpadded]
+  uint32_t                dev_config;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(367): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'ep_in' [-Wpadded]
+  USBD_EndpointTypeDef    ep_in[16];
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(376): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'dev_remote_wakeup' [-Wpadded]
+  uint32_t                dev_remote_wakeup;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(379): warning: padding struct 'struct _USBD_HandleTypeDef' with 1 byte to align 'request' [-Wpadded]
+  USBD_SetupReqTypedef    request;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(380): warning: padding struct 'struct _USBD_HandleTypeDef' with 2 bytes to align 'pDesc' [-Wpadded]
+  USBD_DescriptorsTypeDef *pDesc;
+                           ^
+../Src/usbd_conf.c(27): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc\usbd_hid.h(86): warning: padding size of 'USBD_HID_HandleTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+../Src/usbd_conf.c(698): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default :
+    ^
+../Src/usbd_conf.c(42): warning: no previous extern declaration for non-static variable 'hpcd_USB_OTG_FS' [-Wmissing-variable-declarations]
+PCD_HandleTypeDef hpcd_USB_OTG_FS;
+                  ^
+../Src/usbd_conf.c(42): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+PCD_HandleTypeDef hpcd_USB_OTG_FS;
+^
+../Src/usbd_conf.c(60): warning: unused function 'SystemClockConfig_Resume' [-Wunused-function]
+static void SystemClockConfig_Resume(void);
+            ^
+15 warnings generated.
+compiling usbd_conf.c...
+../Src/usb_device/usbd_sdk.c(47): warning: non-portable path to file '"usbd_sdk.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "usbd_SDK.h"
+         ^~~~~~~~~~~~
+         "usbd_sdk.h"
+../Src/usb_device/usbd_sdk.c(47): warning: In file included from...
+../Inc\usbd_SDK.h(37): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_ioreq.h(28): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(28): warning: In file included from...
+../Inc\usbd_conf.h(34): warning: In file included from...
+../Inc/main.h(31): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal.h(29): warning: In file included from...
+../Inc\stm32h7xx_hal_conf.h(487): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc\stm32h7xx_hal_pcd.h(28): warning: In file included from...
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(143): warning: padding struct 'USB_EPTypeDef' with 2 bytes to align 'maxpacket' [-Wpadded]
+  uint32_t  maxpacket;            /*!< Endpoint Max packet size
+            ^
+../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h(155): warning: padding struct 'USB_EPTypeDef' with 1 byte to align 'tx_fifo_num' [-Wpadded]
+  uint16_t  tx_fifo_num;          /*!< Transmission FIFO number
+            ^
+../Src/usb_device/usbd_sdk.c(47): warning: In file included from...
+../Inc\usbd_SDK.h(37): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_ioreq.h(28): warning: In file included from...
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  _SwapVal = (_Byte2 << 8) | _Byte1;
+           ~ ~~~~~~~~~~~~~~^~~~~~~~
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(363): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'dev_config' [-Wpadded]
+  uint32_t                dev_config;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(367): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'ep_in' [-Wpadded]
+  USBD_EndpointTypeDef    ep_in[16];
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(376): warning: padding struct 'struct _USBD_HandleTypeDef' with 3 bytes to align 'dev_remote_wakeup' [-Wpadded]
+  uint32_t                dev_remote_wakeup;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(379): warning: padding struct 'struct _USBD_HandleTypeDef' with 1 byte to align 'request' [-Wpadded]
+  USBD_SetupReqTypedef    request;
+                          ^
+../Middlewares/ST/STM32_USB_Device_Library/Core/Inc\usbd_def.h(380): warning: padding struct 'struct _USBD_HandleTypeDef' with 2 bytes to align 'pDesc' [-Wpadded]
+  USBD_DescriptorsTypeDef *pDesc;
+                           ^
+../Src/usb_device/usbd_sdk.c(54): warning: no previous prototype for function 'usb_connect_ok' [-Wmissing-prototypes]
+int usb_connect_ok(void)
+    ^
+../Src/usb_device/usbd_sdk.c(54): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int usb_connect_ok(void)
+^
+static 
+../Src/usb_device/usbd_sdk.c(66): warning: no previous prototype for function 'usb_SDK_write' [-Wmissing-prototypes]
+int usb_SDK_write(uint8_t* data, uint32_t length)
+    ^
+../Src/usb_device/usbd_sdk.c(66): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int usb_SDK_write(uint8_t* data, uint32_t length)
+^
+static 
+../Src/usb_device/usbd_sdk.c(79): warning: unused parameter 'pbuf' [-Wunused-parameter]
+__weak void usb_SDK_read_cb(uint8_t *pbuf, uint16_t len)
+                                     ^
+../Src/usb_device/usbd_sdk.c(79): warning: unused parameter 'len' [-Wunused-parameter]
+__weak void usb_SDK_read_cb(uint8_t *pbuf, uint16_t len)
+                                                    ^
+../Src/usb_device/usbd_sdk.c(79): warning: no previous prototype for function 'usb_SDK_read_cb' [-Wmissing-prototypes]
+__weak void usb_SDK_read_cb(uint8_t *pbuf, uint16_t len)
+            ^
+../Src/usb_device/usbd_sdk.c(79): note: declare 'static' if the function is not intended to be used outside of this translation unit
+__weak void usb_SDK_read_cb(uint8_t *pbuf, uint16_t len)
+       ^
+       static 
+../Src/usb_device/usbd_sdk.c(304): warning: unused parameter 'cfgidx' [-Wunused-parameter]
+                               uint8_t cfgidx)
+                                       ^
+../Src/usb_device/usbd_sdk.c(328): warning: unused parameter 'cfgidx' [-Wunused-parameter]
+                                 uint8_t cfgidx)
+                                         ^
+../Src/usb_device/usbd_sdk.c(395): warning: no previous prototype for function 'USBD_SDK_DeviceQualifierDescriptor' [-Wmissing-prototypes]
+uint8_t  *USBD_SDK_DeviceQualifierDescriptor (uint16_t *length)
+          ^
+../Src/usb_device/usbd_sdk.c(395): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t  *USBD_SDK_DeviceQualifierDescriptor (uint16_t *length)
+^
+static 
+../Src/usb_device/usbd_sdk.c(410): warning: unused parameter 'pdev' [-Wunused-parameter]
+static uint8_t  USBD_SDK_DataIn (USBD_HandleTypeDef *pdev, 
+                                                     ^
+../Src/usb_device/usbd_sdk.c(427): warning: unused parameter 'pdev' [-Wunused-parameter]
+static uint8_t  USBD_SDK_EP0_RxReady (USBD_HandleTypeDef *pdev)
+                                                          ^
+../Src/usb_device/usbd_sdk.c(438): warning: unused parameter 'pdev' [-Wunused-parameter]
+static uint8_t  USBD_SDK_EP0_TxReady (USBD_HandleTypeDef *pdev)
+                                                          ^
+../Src/usb_device/usbd_sdk.c(449): warning: unused parameter 'pdev' [-Wunused-parameter]
+static uint8_t  USBD_SDK_SOF (USBD_HandleTypeDef *pdev)
+                                                  ^
+../Src/usb_device/usbd_sdk.c(461): warning: unused parameter 'pdev' [-Wunused-parameter]
+static uint8_t  USBD_SDK_IsoINIncomplete (USBD_HandleTypeDef *pdev, uint8_t epnum)
+                                                              ^
+../Src/usb_device/usbd_sdk.c(461): warning: unused parameter 'epnum' [-Wunused-parameter]
+static uint8_t  USBD_SDK_IsoINIncomplete (USBD_HandleTypeDef *pdev, uint8_t epnum)
+                                                                            ^
+../Src/usb_device/usbd_sdk.c(473): warning: unused parameter 'pdev' [-Wunused-parameter]
+static uint8_t  USBD_SDK_IsoOutIncomplete (USBD_HandleTypeDef *pdev, uint8_t epnum)
+                                                               ^
+../Src/usb_device/usbd_sdk.c(473): warning: unused parameter 'epnum' [-Wunused-parameter]
+static uint8_t  USBD_SDK_IsoOutIncomplete (USBD_HandleTypeDef *pdev, uint8_t epnum)
+                                                                             ^
+../Src/usb_device/usbd_sdk.c(493): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        USBD_SDK_DCMI_Rx_Handle(pdev, SDK_RxBuffer, RxLength);
+        ~~~~~~~~~~~~~~~~~~~~~~~                     ^~~~~~~~
+26 warnings generated.
+compiling usbd_sdk.c...
+compiling stm32h7xx_hal_pcd.c...
+compiling stm32h7xx_hal_cortex.c...
+compiling stm32h7xx_ll_usb.c...
+compiling stm32h7xx_hal_dcmi.c...
+compiling stm32h7xx_hal_i2c_ex.c...
+compiling stm32h7xx_hal_i2c.c...
+compiling stm32h7xx_hal_spi.c...
+compiling stm32h7xx_hal_spi_ex.c...
+compiling stm32h7xx_hal_tim_ex.c...
+compiling stm32h7xx_hal_rcc.c...
+compiling stm32h7xx_hal_tim.c...
+compiling stm32h7xx_hal_flash.c...
+compiling stm32h7xx_hal_rcc_ex.c...
+compiling stm32h7xx_hal_flash_ex.c...
+compiling stm32h7xx_hal_gpio.c...
+compiling timers.c...
+compiling stm32h7xx_hal_hsem.c...
+compiling croutine.c...
+compiling cmsis_os.c...
+compiling list.c...
+compiling event_groups.c...
+compiling stm32h7xx_hal_pwr.c...
+compiling system_stm32h7xx.c...
+compiling stream_buffer.c...
+compiling stm32h7xx_hal_mdma.c...
+compiling stm32h7xx_hal.c...
+compiling stm32h7xx_hal_pwr_ex.c...
+compiling stm32h7xx_hal_dma_ex.c...
+compiling queue.c...
+compiling heap_4.c...
+compiling port.c...
+compiling stm32h7xx_hal_dma.c...
+compiling tasks.c...
+compiling usbd_ioreq.c...
+compiling Shutter.c...
+compiling TempProcess.c...
+compiling SPI.c...
+compiling Varible.c...
+compiling usbd_ctlreq.c...
+compiling usbd_core.c...
+linking...
+NK1092C_H750\NK1092C_H750.axf: Error: L6218E: Undefined symbol USBD_HID (referred from usb_device.o).
+NK1092C_H750\NK1092C_H750.axf: Error: L6218E: Undefined symbol htim1 (referred from stm32h7xx_it.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+"NK1092C_H750\NK1092C_H750.axf" - 2 Error(s), 219 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.3.0.0.pack
+                Keil.STM32H7xx_DFP.3.0.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_NK1092C_H750
+  C:\Users\shume\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\shume\AppData\Local\Arm\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Target not created.
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

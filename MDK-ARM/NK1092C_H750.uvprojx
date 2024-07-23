@@ -10,8 +10,8 @@
       <TargetName>NK1092C_H750</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::.\ARMCC</pCCUsed>
-      <uAC6>0</uAC6>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32H750IBKx</Device>
@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4107</DriverSelection>
+            <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -186,7 +186,6 @@
             <RvdsVP>3</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
-            <nBranchProt>0</nBranchProt>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -314,7 +313,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -323,14 +322,14 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>2</wLevel>
+            <wLevel>3</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>1</v6Lang>
-            <v6LangP>1</v6LangP>
+            <v6Lang>3</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -340,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H750xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\Src\Gd\inc;..\Src\Measure;..\Src\flash</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;..\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\Src\Gd\inc;..\Src\Measure;..\Src\flash</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -716,7 +715,7 @@
             <File>
               <FileName>port.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c</FilePath>
+              <FilePath>..\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -805,8 +804,8 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.3.0" condition="CMSIS Core">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
         <targetInfos>
           <targetInfo name="NK1092C_H750"/>
         </targetInfos>

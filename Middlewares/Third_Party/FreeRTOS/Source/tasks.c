@@ -3512,15 +3512,15 @@ static void prvInitialiseNewTask( TaskFunction_t pxTaskCode,
 
 static BaseType_t prvCreateIdleTasks( void )
 {
-    BaseType_t xReturn = pdPASS;
+    BaseType_t xReturn = pdPASS; // = true
     BaseType_t xCoreID;
     char cIdleName[ configMAX_TASK_NAME_LEN ];
-    TaskFunction_t pxIdleTaskFunction = NULL;
+    TaskFunction_t pxIdleTaskFunction = NULL; // typedef void (* TaskFunction_t)( void * arg ); - task prototype in FreeRTOS
     BaseType_t xIdleTaskNameIndex;
 
     for( xIdleTaskNameIndex = ( BaseType_t ) 0; xIdleTaskNameIndex < ( BaseType_t ) configMAX_TASK_NAME_LEN; xIdleTaskNameIndex++ )
     {
-        cIdleName[ xIdleTaskNameIndex ] = configIDLE_TASK_NAME[ xIdleTaskNameIndex ];
+        cIdleName[ xIdleTaskNameIndex ] = configIDLE_TASK_NAME[ xIdleTaskNameIndex ]; // #define configIDLE_TASK_NAME    "IDLE"
 
         /* Don't copy all configMAX_TASK_NAME_LEN if the string is shorter than
          * configMAX_TASK_NAME_LEN characters just in case the memory after the
@@ -3531,7 +3531,7 @@ static BaseType_t prvCreateIdleTasks( void )
         }
         else
         {
-            mtCOVERAGE_TEST_MARKER();
+            mtCOVERAGE_TEST_MARKER(); // inserted into the code in places where the developer wants to record the execution of certain sections of code
         }
     }
 
@@ -3666,9 +3666,9 @@ static BaseType_t prvCreateIdleTasks( void )
 
 void vTaskStartScheduler( void )
 {
-    BaseType_t xReturn;
+    BaseType_t xReturn; // long
 
-    traceENTER_vTaskStartScheduler();
+    traceENTER_vTaskStartScheduler(); // debug macro. Is not defined, so doesn't affect the code
 
     #if ( configUSE_CORE_AFFINITY == 1 ) && ( configNUMBER_OF_CORES > 1 )
     {

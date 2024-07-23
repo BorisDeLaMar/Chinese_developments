@@ -1,39 +1,46 @@
-nk1092c_h750\spi_device.o: ..\Src\spi\spi_device.c
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
-nk1092c_h750\spi_device.o: ../Inc/stm32h7xx_hal_conf.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h
-nk1092c_h750\spi_device.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
-nk1092c_h750\spi_device.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h
-nk1092c_h750\spi_device.o: ../Drivers/CMSIS/Include/core_cm7.h
-nk1092c_h750\spi_device.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-nk1092c_h750\spi_device.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
-nk1092c_h750\spi_device.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
-nk1092c_h750\spi_device.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-nk1092c_h750\spi_device.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-nk1092c_h750\spi_device.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dcmi.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h
-nk1092c_h750\spi_device.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h
-nk1092c_h750\spi_device.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-nk1092c_h750\spi_device.o: ..\Src\spi\spi_device.h
-nk1092c_h750\spi_device.o: ..\Src\ir\ir_def.h
+nk1092c_h750/spi_device.o: ..\Src\spi\spi_device.c \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
+  ..\Inc\stm32h7xx_hal_conf.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h \
+  ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h \
+  ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h \
+  ..\Drivers\CMSIS\Include\core_cm7.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Drivers\CMSIS\Include\cmsis_version.h \
+  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  ..\Drivers\CMSIS\Include\cmsis_armclang.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  ..\Drivers\CMSIS\Include\mpu_armv7.h \
+  ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dcmi.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cortex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hsem.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  ..\Src\spi\spi_device.h \
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h \
+  ..\Src\ir\ir_def.h

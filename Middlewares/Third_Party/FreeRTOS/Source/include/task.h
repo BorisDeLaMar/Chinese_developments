@@ -2309,6 +2309,12 @@ char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION;
  * value respectively.  The counter should be at least 10 times the frequency of
  * the tick count.
  *
+ * WARN: This function assumes that the pcWriteBuffer is of length
+ * configSTATS_BUFFER_MAX_LENGTH. This function is there only for
+ * backward compatiblity. New applications are recommended to use
+ * vTaskGetRunTimeStatistics and supply the length of the pcWriteBuffer
+ * explicitly.
+ *
  * NOTE 1: This function will disable interrupts for its duration.  It is
  * not intended for normal application runtime use but as a debug aid.
  *
