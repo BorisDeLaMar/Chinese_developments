@@ -14,6 +14,8 @@
 "nk1092c_h750\stm32h7xx_hal_msp.o"
 "nk1092c_h750\w25qxx.o"
 "nk1092c_h750\usbd_sdk.o"
+"nk1092c_h750\usbd_hid.o"
+"nk1092c_h750\stm32h7xx_hal_timebase_tim.o"
 "nk1092c_h750\stm32h7xx_hal_pcd.o"
 "nk1092c_h750\stm32h7xx_hal_pcd_ex.o"
 "nk1092c_h750\stm32h7xx_ll_usb.o"

@@ -13,5 +13,4 @@ ir_mcu_sdk_demo_v1.3_basedon_2.0module_20201215/timers.o: \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h

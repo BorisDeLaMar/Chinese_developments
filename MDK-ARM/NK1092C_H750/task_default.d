@@ -51,12 +51,9 @@ nk1092c_h750/task_default.o: ..\Src\task\task_default.c \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
   ..\Src\ir\ir_def.h ..\Inc\main.h ..\Src\Gd\inc\Varible.h \
   ..\Src\Gd\inc\Sensor.h ..\Src\Gd\inc\SPI.h ..\Src\Gd\inc\Shutter.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \

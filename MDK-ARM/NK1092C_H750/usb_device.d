@@ -45,10 +45,7 @@ nk1092c_h750/usb_device.o: ..\Src\usb_device.c ..\Inc\usb_device.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Inc\main.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
   ..\Inc\usbd_desc.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Class\HID\Inc\usbd_hid.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h
+  ..\Middlewares\ST\STM32_USB_Device_Library\Class\HID\Inc\usbd_hid.h

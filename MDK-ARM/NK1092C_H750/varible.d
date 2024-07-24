@@ -4,7 +4,6 @@ nk1092c_h750/varible.o: ..\Src\Gd\src\Varible.c ..\Src\Gd\inc\Varible.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   ..\Src\Measure\MeasureInterface.h ..\Src\Measure\interface.h \
-  ..\Src\Gd\inc\Sensor.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
   ..\Inc\stm32h7xx_hal_conf.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h \
@@ -56,9 +55,6 @@ nk1092c_h750/varible.o: ..\Src\Gd\src\Varible.c ..\Src\Gd\inc\Varible.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h

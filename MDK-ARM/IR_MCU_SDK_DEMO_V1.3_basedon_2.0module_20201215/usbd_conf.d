@@ -46,9 +46,6 @@ ir_mcu_sdk_demo_v1.3_basedon_2.0module_20201215/usbd_conf.o: \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Inc\main.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Class\HID\Inc\usbd_hid.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h
+  ..\Middlewares\ST\STM32_USB_Device_Library\Class\HID\Inc\usbd_hid.h

@@ -40,6 +40,5 @@ nk1092c_h750/w25qxx.o: ..\Src\flash\W25QXX.c ..\Src\flash\W25QXX.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h \
-  ..\Src\spi\spi_device.h \
-  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h \
-  ..\Src\ir\ir_def.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
+  ..\Src\spi\spi_device.h ..\Src\ir\ir_def.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h

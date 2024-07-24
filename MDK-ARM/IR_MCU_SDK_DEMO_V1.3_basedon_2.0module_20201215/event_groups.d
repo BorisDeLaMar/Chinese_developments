@@ -13,6 +13,4 @@ ir_mcu_sdk_demo_v1.3_basedon_2.0module_20201215/event_groups.o: \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h

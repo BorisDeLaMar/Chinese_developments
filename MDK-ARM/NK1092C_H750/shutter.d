@@ -41,7 +41,6 @@ nk1092c_h750/shutter.o: ..\Src\Gd\src\Shutter.c ..\Src\Gd\inc\Shutter.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h \
   ..\Src\Gd\inc\Varible.h ..\Src\Gd\inc\Sensor.h ..\Src\Gd\inc\SPI.h \
-  ..\Src\Gd\inc\Shutter.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   ..\Src\Measure\MeasureInterface.h ..\Src\Measure\interface.h

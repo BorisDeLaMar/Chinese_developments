@@ -51,20 +51,15 @@ nk1092c_h750/task_ircamera.o: ..\Src\task\task_ircamera.c \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
   ..\Inc\usb_device.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
   ..\Inc\usbd_conf.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Inc\main.h \
-  ..\Src\spi\spi_device.h \
-  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h \
-  ..\Src\ir\ir_def.h ..\Src\flash\W25QXX.h ..\Src\Gd\inc\Varible.h \
-  ..\Src\Gd\inc\Sensor.h ..\Src\Gd\inc\SPI.h ..\Src\Gd\inc\Shutter.h \
-  ..\Src\Measure\MeasureInterface.h ..\Src\Measure\interface.h \
-  ..\Src\Gd\inc\Sensor.h
+  ..\Src\spi\spi_device.h ..\Src\ir\ir_def.h ..\Src\flash\W25QXX.h \
+  ..\Src\Gd\inc\Varible.h ..\Src\Gd\inc\Sensor.h ..\Src\Gd\inc\SPI.h \
+  ..\Src\Gd\inc\Shutter.h ..\Src\Measure\MeasureInterface.h \
+  ..\Src\Measure\interface.h
